@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GitHub Profile Dashboard - Real-time stats, projects, and activity feed">
+    <meta name="keywords" content="GitHub, Portfolio, Developer, Dashboard">
+    <meta name="author" content="Adrika Pandey">
+    
+    <title>Adrika Pandey | GitHub Profile Dashboard</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%2358a6ff'>A</text></svg>">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <div class="profile-header">
+                <img id="avatar" src="" alt="Profile Avatar" />
+                <div class="profile-info">
+                    <h1 id="username">Loading...</h1>
+                    <p id="bio">GitHub Developer</p>
+                </div>
+            </div>
+            <div class="header-links">
+                <a id="github-link" href="#" target="_blank">View GitHub</a>
+                <a id="profile-link" href="#" target="_blank">Profile</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Statistics Cards -->
+        <section>
+            <div class="section-header">
+                <h2>📊 Statistics</h2>
+                <div class="refresh-info">
+                    <span>Last updated: <strong id="last-update">--:--</strong></span>
+                    <span>Next refresh: <strong id="refresh-timer">5m 0s</strong></span>
+                </div>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Public Repositories</h3>
+                    <div class="number" id="public-repos">0</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Followers</h3>
+                    <div class="number" id="followers">0</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Following</h3>
+                    <div class="number" id="following">0</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Public Gists</h3>
+                    <div class="number" id="gists">0</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects -->
+        <section>
+            <div class="section-header">
+                <h2>🚀 Featured Projects</h2>
+                <span style="color: var(--text-secondary); font-size: 0.9rem;">Top 6 by stars</span>
+            </div>
+            <div id="projects-grid" class="projects-grid">
+                <div class="loading">Loading projects...</div>
+            </div>
+        </section>
+
+        <!-- Languages & Technologies -->
+        <section>
+            <div class="section-header">
+                <h2>💻 Languages & Technologies</h2>
+                <span style="color: var(--text-secondary); font-size: 0.9rem;">By repository count</span>
+            </div>
+            <div id="languages-container" class="languages-container">
+                <div class="loading">Loading languages...</div>
+            </div>
+        </section>
+
+        <!-- Recent Activity -->
+        <section>
+            <div class="section-header">
+                <h2>📈 Recent Activity</h2>
+                <span style="color: var(--text-secondary); font-size: 0.9rem;">Last 8 events</span>
+            </div>
+            <div id="activity-feed" class="activity-feed">
+                <div class="loading">Loading activity...</div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer style="text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border-color); color: var(--text-secondary); font-size: 0.9rem;">
+            <p>GitHub Profile Dashboard | Built with ❤️ using GitHub API</p>
+            <p style="margin-top: 0.5rem; font-size: 0.85rem;">
+                <a href="https://github.com/adrikapandey/adrikapandey" target="_blank" style="color: var(--accent-blue); text-decoration: none;">View Repository</a> • 
+                <a href="https://github.com/adrikapandey" target="_blank" style="color: var(--accent-blue); text-decoration: none;">Visit GitHub</a>
+            </p>
+        </footer>
+    </main>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
